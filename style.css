@@ -449,3 +449,35 @@ button:hover {
         margin: 8px auto 0;
     }
 }
+/* ===== FULL MOBILE BOX ===== */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 100%;
+        min-height: 100vh;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    .box {
+        width: 100%;
+        max-width: none;
+        box-sizing: border-box;
+        padding: 35px 20px;
+        margin: 0;
+    }
+
+    .box h1 {
+        font-size: 30px;
+    }
+
+    .box p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .box button {
+        max-width: 100%;
+    }
+}
