@@ -57,7 +57,6 @@ function showMessage() {
 
 
 function finalMessage() {
-    function finalMessage() {
     document.querySelector(".box").innerHTML = `
         <div class="heart">💖</div>
 
@@ -95,8 +94,12 @@ function sparkles() {
         sparkle.className = "sparkle";
         sparkle.innerHTML = "✦";
 
-        sparkle.style.left = Math.random() * 100 + "vw";
-        sparkle.style.top = Math.random() * 100 + "vh";
+        sparkle.style.left =
+            Math.random() * 100 + "vw";
+
+        sparkle.style.top =
+            Math.random() * 100 + "vh";
+
         sparkle.style.fontSize =
             (12 + Math.random() * 15) + "px";
 
