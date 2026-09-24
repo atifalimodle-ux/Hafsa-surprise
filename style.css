@@ -481,3 +481,32 @@ button:hover {
         max-width: 100%;
     }
 }
+/* ===== FINAL PAGE MOBILE FIX ===== */
+
+@media (max-width: 600px) {
+
+    .box:has(.final-text) {
+        width: 100%;
+        max-width: 100%;
+        padding: 30px 18px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .box:has(.final-text) h1 {
+        font-size: 30px;
+    }
+
+    .box:has(.final-text) .heart {
+        font-size: 45px;
+    }
+
+    .box:has(.final-text) .final-text {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .box:has(.final-text) h2 {
+        font-size: 17px;
+    }
+}
