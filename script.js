@@ -57,29 +57,30 @@ function showMessage() {
 
 
 function finalMessage() {
+    function finalMessage() {
     document.querySelector(".box").innerHTML = `
         <div class="heart">💖</div>
 
+        <div class="premium-line"></div>
+
         <h1>For Hafsa ✨</h1>
 
-        <p>
-            Some people don't even realize
-            how special they are.
+        <p class="final-text">
+            Some people quietly make the world
+            a little brighter just by being in it.
             <br><br>
 
-            So here's a little reminder:
-            <br><br>
-
-            Your smile, your voice,
-            your presence, and all those little
-            things that make you <b>you</b>
-            are genuinely wonderful.
+            Your smile, your voice, your presence,
+            and all those little things that make
+            you <b>you</b> are truly special.
             <br><br>
 
             I'm really glad you're back. 🌷
         </p>
 
-        <h2>Made just for you 💗</h2>
+        <div class="premium-line"></div>
+
+        <h2>Made especially for you 💗</h2>
     `;
 
     roseRain();

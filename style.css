@@ -255,3 +255,129 @@ body::after {
         transform: scale(1.15);
     }
 }
+/* PREMIUM OPENING EFFECT */
+
+body {
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255, 182, 193, 0.5), transparent 30%),
+        radial-gradient(circle at 80% 80%, rgba(216, 180, 254, 0.5), transparent 30%),
+        linear-gradient(135deg, #ffe4ec, #f7d9ff, #e2e8ff);
+}
+
+.container {
+    animation: pageAppear 1.2s ease;
+}
+
+.box {
+    box-shadow:
+        0 20px 50px rgba(180, 100, 150, 0.25),
+        0 0 30px rgba(255, 150, 200, 0.25);
+    animation: boxGlow 3s ease-in-out infinite;
+}
+
+@keyframes pageAppear {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes boxGlow {
+    0%, 100% {
+        box-shadow:
+            0 20px 50px rgba(180, 100, 150, 0.25),
+            0 0 20px rgba(255, 150, 200, 0.2);
+    }
+
+    50% {
+        box-shadow:
+            0 20px 50px rgba(180, 100, 150, 0.35),
+            0 0 40px rgba(255, 150, 200, 0.5);
+    }
+}
+
+button {
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.06);
+}
+/* Premium Final Screen */
+
+.final-text {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.premium-line {
+    width: 70px;
+    height: 2px;
+    margin: 15px auto 20px;
+    background: #ff8fab;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+
+.box h2 {
+    color: #d45d85;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+/* Elegant Glow */
+
+.final-text {
+    text-shadow: 0 1px 8px rgba(180, 100, 150, 0.12);
+}
+
+.box h1 {
+    text-shadow: 0 2px 12px rgba(255, 111, 156, 0.25);
+}
+
+.box h2 {
+    text-shadow: 0 2px 10px rgba(212, 93, 133, 0.2);
+}
+
+.heart {
+    filter: drop-shadow(0 0 12px rgba(255, 100, 150, 0.45));
+}
+/* PREMIUM FINAL CARD */
+
+.box:has(.final-text) {
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    box-shadow:
+        0 25px 60px rgba(150, 80, 130, 0.25),
+        0 0 50px rgba(255, 170, 200, 0.25);
+    padding: 50px 35px;
+}
+
+.box:has(.final-text) h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.box:has(.final-text) .heart {
+    font-size: 55px;
+    margin-bottom: 5px;
+}
+
+.box:has(.final-text) .premium-line {
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #ff8fab,
+        transparent
+    );
+}
