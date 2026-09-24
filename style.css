@@ -417,3 +417,35 @@ button:hover {
         transform: translateY(0) scale(1);
     }
 }
+/* ===== MOBILE MUSIC BUTTON FIX ===== */
+
+.music-button {
+    display: block;
+    margin: 10px auto 0;
+    min-width: auto;
+    width: 120px;
+    padding: 7px 10px;
+    font-size: 12px;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .music-button {
+        width: 110px;
+        padding: 6px 8px;
+        font-size: 11px;
+        margin: 8px auto 0;
+    }
+}
