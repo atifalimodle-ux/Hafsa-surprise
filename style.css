@@ -395,3 +395,25 @@ button:hover {
     background: #ff4f87;
     transform: scale(1.05);
 }
+/* ===== PAGE CHANGE ANIMATION ===== */
+
+.box.page-enter {
+    animation: pagePop 1.1s ease;
+}
+
+@keyframes pagePop {
+    0% {
+        opacity: 0;
+        transform: translateY(35px) scale(0.92);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(-8px) scale(1.02);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}

@@ -6,6 +6,12 @@ function showSection(section) {
 
     const box = document.querySelector(".box");
 
+    box.classList.remove("page-enter");
+
+    void box.offsetWidth;
+
+    box.classList.add("page-enter");
+
     if (section === 1) {
         box.innerHTML = `
             <div class="heart">♡</div>
