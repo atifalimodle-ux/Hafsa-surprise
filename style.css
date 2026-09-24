@@ -510,27 +510,97 @@ button:hover {
         font-size: 17px;
     }
 }
-/* ===== FINAL PAGE SCROLL FIX ===== */
+/* ===== FINAL MOBILE SCREEN - NO SCROLL ===== */
 
 @media (max-width: 600px) {
 
     body {
-        min-height: 100vh;
-        height: auto;
-        overflow-y: auto;
+        height: 100dvh;
+        min-height: 100dvh;
+        overflow: hidden;
     }
 
     .container {
-        min-height: 100vh;
-        height: auto;
-        align-items: flex-start;
-        padding-top: 20px;
-        padding-bottom: 30px;
+        width: 100%;
+        height: 100dvh;
+        min-height: 0;
+        padding: 55px 8px 8px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
     }
 
+    .box {
+        width: 100%;
+        max-width: none;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 18px 14px;
+    }
+
+    .box h1 {
+        font-size: 26px;
+        margin-bottom: 8px;
+    }
+
+    .box p {
+        font-size: 13px;
+        line-height: 1.45;
+    }
+
+    .box button {
+        padding: 9px 16px;
+        font-size: 13px;
+    }
+
+    /* Music button */
+    .music-button {
+        position: fixed;
+        top: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 9999;
+
+        width: 95px;
+        min-width: 0;
+        padding: 6px 5px;
+        margin: 0;
+        font-size: 10px;
+    }
+
+    /* Final page */
     .box:has(.final-text) {
-        max-height: none;
+        width: 100%;
         height: auto;
-        overflow: visible;
+        max-height: calc(100dvh - 70px);
+        padding: 15px 12px;
+        box-sizing: border-box;
+    }
+
+    .box:has(.final-text) h1 {
+        font-size: 25px;
+        margin-bottom: 4px;
+    }
+
+    .box:has(.final-text) .heart {
+        font-size: 38px;
+        margin-bottom: 0;
+    }
+
+    .box:has(.final-text) .final-text {
+        font-size: 12px;
+        line-height: 1.35;
+        margin: 8px 0;
+    }
+
+    .box:has(.final-text) h2 {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    .box:has(.final-text) .premium-line {
+        margin: 7px auto;
     }
 }
